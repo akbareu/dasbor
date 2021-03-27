@@ -111,11 +111,6 @@
                 <i class="mdi mdi-power"></i>
               </a>
             </li>
-            <li class="nav-item nav-settings d-none d-lg-block">
-              <a class="nav-link" href="#">
-                <i class="mdi mdi-format-line-spacing"></i>
-              </a>
-            </li>
             <li class="nav-item d-none d-lg-block full-screen-link">
               <a class="nav-link">
                 <i class="mdi mdi-fullscreen" id="fullscreen-button"></i>
@@ -127,9 +122,12 @@
           </button>
         </div>
       </nav>
-      <!-- partial -->
+
+
+
+      <!-- Sidebar -->
       <div class="container-fluid page-body-wrapper">
-        <!-- partial:partials/_sidebar.html -->
+        <!-- Sidebar:partials/_sidebar.html -->
         <nav class="sidebar sidebar-offcanvas" id="sidebar">
           <ul class="nav">
             <li class="nav-item nav-profile">
@@ -148,15 +146,15 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="index.html">
-                <span class="menu-title">Dashboard</span>
+                <span class="menu-title">Dasbor</span>
                 <i class="mdi mdi-home menu-icon"></i>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
-                <span class="menu-title">Basic UI Elements</span>
+                <span class="menu-title">Kursus</span>
                 <i class="menu-arrow"></i>
-                <i class="mdi mdi-crosshairs-gps menu-icon"></i>
+                <i class="mdi mdi-book-open-page-variant menu-icon"></i>
               </a>
               <div class="collapse" id="ui-basic">
                 <ul class="nav flex-column sub-menu">
@@ -167,26 +165,20 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="pages/icons/mdi.html">
-                <span class="menu-title">Icons</span>
-                <i class="mdi mdi-contacts menu-icon"></i>
+                <span class="menu-title">Forum</span>
+                <i class="mdi mdi mdi-comment-text menu-icon"></i>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="pages/forms/basic_elements.html">
-                <span class="menu-title">Forms</span>
-                <i class="mdi mdi-format-list-bulleted menu-icon"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="pages/charts/chartjs.html">
-                <span class="menu-title">Charts</span>
-                <i class="mdi mdi-chart-bar menu-icon"></i>
+                <span class="menu-title">Sertifikat</span>
+                <i class="mdi mdi-certificate menu-icon"></i>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="pages/tables/basic-table.html">
-                <span class="menu-title">Tables</span>
-                <i class="mdi mdi-table-large menu-icon"></i>
+                <span class="menu-title">Blog</span>
+                <i class="mdi mdi-clipboard-text menu-icon"></i>
               </a>
             </li>
             <li class="nav-item">
@@ -206,14 +198,17 @@
             <li class="nav-item sidebar-actions">
               <span class="nav-link">
                 <div class="border-bottom">
-                  <h6 class="font-weight-normal mb-3">Projects</h6>
+                  <a class="text-decoration-none text-dark" href=""><h6 class="font-weight-normal mb-3">Keranjang</h6></a>
                 </div>
-                <button class="btn btn-block btn-lg btn-gradient-primary mt-4">+ Add a project</button>
+                <button class="btn btn-block btn-lg btn-gradient-primary mt-4"><i class="mdi mdi-cart-plus"></i> Tambah item</button>
               </span>
             </li>
           </ul>
         </nav>
-        <!-- partial -->
+        <!-- Sidebar -->
+
+
+        <!-- Konten isi -->
         <div class="main-panel">
           <div class="content-wrapper">
             <div class="page-header">
@@ -331,7 +326,9 @@
                     <h4 class="card-title">Todo</h4>
                     <div class="add-items d-flex">
                       <input type="text" class="form-control todo-list-input" placeholder="TODO">
-                      <button class="add btn btn-gradient-primary font-weight-bold todo-list-add-btn" id="add-task">Tambah</button>
+                      <button class="add btn btn-gradient-primary font-weight-bold todo-list-add-btn" id="add-task">
+                        Tambah
+                      </button>
                     </div>
                     <div class="list-wrapper">
                       <ul class="d-flex flex-column-reverse todo-list todo-list-custom">
@@ -447,8 +444,11 @@
               </div>
             </div>
           </div>
-          <!-- content-wrapper ends -->
-          <!-- partial:partials/_footer.html -->
+          <!-- Konten isi-->
+
+
+
+          <!-- Footer:partials/_footer.html -->
           <footer class="footer">
             <div class="container-fluid clearfix">
               <span class="text-muted d-block text-center text-sm-left d-sm-inline-block" id="copyright">Copyright © BERCODING 
@@ -458,7 +458,8 @@
               </span>
             </div>
           </footer>
-          <!-- partial -->
+          <!-- Footer -->
+          
         </div>
         <!-- main-panel ends -->
       </div>
