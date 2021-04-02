@@ -1,19 +1,16 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Purple Admin</title>
+    <title>Dashboard | Member</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="../../assets/vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="../../assets/vendors/datepick/mc-calendar.min.css">
     <link rel="stylesheet" href="../../assets/vendors/css/vendor.bundle.base.css">
-    <!-- endinject -->
-    <!-- Plugin css for this page -->
-    <!-- End plugin css for this page -->
-    <!-- inject:css -->
-    <!-- endinject -->
-    <!-- Layout styles -->
+
     <link rel="stylesheet" href="../../assets/css/style.css">
     <!-- End layout styles -->
     <link rel="shortcut icon" href="../../assets/images/logo-mini.png" />
@@ -266,122 +263,94 @@
           </ul>
         </nav>
         <!-- partial -->
-        <div class="main-panel">
-          <div class="content-wrapper">
-            <div class="page-header">
-              <h3 class="page-title"> Basic Tables </h3>
-              <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="#">Tables</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Basic tables</li>
-                </ol>
-              </nav>
-            </div>
-            <div class="row">
-              <div class="col-lg-6 grid-margin stretch-card">
+          <div class="main-panel">
+            <div class="content-wrapper">
+              <div class="page-header">
+                  <h3 class="page-title">
+                    <span class="page-title-icon bg-gradient-primary text-white mr-2">
+                      <i class="mdi mdi-account-key"></i>
+                    </span> Profile
+                  </h3>
+              </div>
                 <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title">Basic Table</h4>
-                    <p class="card-description"> Add class <code>.table</code>
-                    </p>
-                    <table class="table table-responsive">
-                      <thead>
-                        <tr>
-                          <th>Profile</th>
-                          <th>VatNo.</th>
-                          <th>Created</th>
-                          <th>Status</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>Jacob</td>
-                          <td>53275531</td>
-                          <td>12 May 2017</td>
-                          <td><label class="badge badge-danger">Pending</label></td>
-                        </tr>
-                        <tr>
-                          <td>Messsy</td>
-                          <td>53275532</td>
-                          <td>15 May 2017</td>
-                          <td><label class="badge badge-warning">In progress</label></td>
-                        </tr>
-                        <tr>
-                          <td>John</td>
-                          <td>53275533</td>
-                          <td>14 May 2017</td>
-                          <td><label class="badge badge-info">Fixed</label></td>
-                        </tr>
-                        <tr>
-                          <td>Peter</td>
-                          <td>53275534</td>
-                          <td>16 May 2017</td>
-                          <td><label class="badge badge-success">Completed</label></td>
-                        </tr>
-                        <tr>
-                          <td>Dave</td>
-                          <td>53275535</td>
-                          <td>20 May 2017</td>
-                          <td><label class="badge badge-warning">In progress</label></td>
-                        </tr>
-                      </tbody>
-                    </table>
+                    <div class="row">
+                      <div class="col-sm-3"><!--left col-->
+                        <form class="form" action="##" method="post" id="registrationForm">
+                        <div class="text-center">
+                            <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="avatar img-circle img-thumbnail" alt="avatar">
+                            <h6>Upload foto profil..</h6>
+                            <input type="file" class="center-block file-upload">
+                          </div></hr><br>
+                        </div>
+                        <div class="col-sm-9">
+                          <h4 class="card-title text-secondary">Account</h4>
+                          <br>
+                            <div class="form-group"> 
+                                <div class="col-xs-6">
+                                    <i class="mdi mdi-account"></i> <label for="first_name"><h6>Nama</h6></label>
+                                    <input type="text" class="form-control" name="first_name" id="first_name" placeholder="first name" title="enter your first name if any.">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-xs-6">
+                                    <i class="mdi mdi-email"></i> <label for="email"><h6>Email</h6></label>
+                                    <input type="email" class="form-control" name="email" id="email" placeholder="you@email.com" title="enter your email.">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                
+                                <div class="col-xs-6">
+                                    <i class="mdi mdi-calendar"></i> <label for="phone"><h6>Tanggal lahir</h6></label>
+                                    <input type="text" class="form-control" id="example" placeholder="enter date" title="enter your phone number if any.">
+                                </div>
+                            </div>
+                
+                            <div class="form-group">
+                                <div class="col-xs-6">
+                                   <i class="mdi mdi-whatsapp"></i> <label for="mobile"><h6>Whatsapp</h6></label>
+                                    <input type="text" class="form-control" name="mobile" id="mobile" placeholder="enter mobile number" title="enter your mobile number if any.">
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+                            <h4 class="card-title text-secondary">Socials</h4>
+                            <br>
+                            <br>
+                            <div class="form-group">
+                                <div class="col-xs-6">
+                                    <i class="mdi mdi-web"></i> <label for="email"><h6>Website</h6></label>
+                                    <input type="email" class="form-control" id="location" placeholder="somewhere" title="enter a location">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                
+                                <div class="col-xs-6">
+                                    <i class="mdi mdi-facebook-box"></i> <label for="password"><h6>Facebook</h6></label>
+                                    <input type="password" class="form-control" name="password" id="password" placeholder="password" title="enter your password.">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                
+                                <div class="col-xs-6">
+                                  <i class="mdi mdi-twitter-box"></i> <label for="password2"><h6>Twitter</h6></label>
+                                    <input type="password" class="form-control" name="password2" id="password2" placeholder="password2" title="enter your password2.">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                               <div class="col-xs-12">
+                                  <br>
+                                  <button class="btn btn-lg btn-success" type="submit"><i class="mdi mdi-content-save-settings"></i>
+                                   Save
+                                 </button>
+                                </div>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-lg-6 grid-margin stretch-card">
-                <div class="card">
-                  <div class="card-body">
-                    <h4 class="card-title">Hoverable Table</h4>
-                    <p class="card-description"> Add class <code>.table-hover</code>
-                    </p>
-                    <table class="table table-hover table-responsive">
-                      <thead>
-                        <tr>
-                          <th>User</th>
-                          <th>Product</th>
-                          <th>Sale</th>
-                          <th>Status</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>Jacob</td>
-                          <td>Photoshop</td>
-                          <td class="text-danger"> 28.76% <i class="mdi mdi-arrow-down"></i></td>
-                          <td><label class="badge badge-danger">Pending</label></td>
-                        </tr>
-                        <tr>
-                          <td>Messsy</td>
-                          <td>Flash</td>
-                          <td class="text-danger"> 21.06% <i class="mdi mdi-arrow-down"></i></td>
-                          <td><label class="badge badge-warning">In progress</label></td>
-                        </tr>
-                        <tr>
-                          <td>John</td>
-                          <td>Premier</td>
-                          <td class="text-danger"> 35.00% <i class="mdi mdi-arrow-down"></i></td>
-                          <td><label class="badge badge-info">Fixed</label></td>
-                        </tr>
-                        <tr>
-                          <td>Peter</td>
-                          <td>After effects</td>
-                          <td class="text-success"> 82.00% <i class="mdi mdi-arrow-up"></i></td>
-                          <td><label class="badge badge-success">Completed</label></td>
-                        </tr>
-                        <tr>
-                          <td>Dave</td>
-                          <td>53275535</td>
-                          <td class="text-success"> 98.05% <i class="mdi mdi-arrow-up"></i></td>
-                          <td><label class="badge badge-warning">In progress</label></td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
           <!-- content-wrapper ends -->
           <!-- partial:../../partials/_footer.html -->
           <footer class="footer">
@@ -403,11 +372,18 @@
     <!-- Plugin js for this page -->
     <!-- End plugin js for this page -->
     <!-- inject:js -->
+    <script src="../../assets/vendors/datepick/mc-calendar.min.js"></script>
     <script src="../../assets/js/off-canvas.js"></script>
     <script src="../../assets/js/hoverable-collapse.js"></script>
     <script src="../../assets/js/misc.js"></script>
     <!-- endinject -->
     <!-- Custom js for this page -->
     <!-- End custom js for this page -->
+    <script>
+      const myDatePicker = MCDatepicker.create({ 
+      el: '#example',
+      showCalendarDisplay: false
+})
+    </script>
   </body>
 </html>
